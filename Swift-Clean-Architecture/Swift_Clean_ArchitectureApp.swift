@@ -11,7 +11,7 @@ import SwiftUI
 struct Swift_Clean_ArchitectureApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TransactionView(viewModel: .init())
         }
     }
 }
