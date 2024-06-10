@@ -12,7 +12,6 @@
 		D81291172C16DD280013F97B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81291162C16DD280013F97B /* Assets.xcassets */; };
 		D812911A2C16DD280013F97B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81291192C16DD280013F97B /* Preview Assets.xcassets */; };
 		D81291272C16DDB00013F97B /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81291262C16DDB00013F97B /* TransactionView.swift */; };
-		D812912F2C16DDCF0013F97B /* Swift_Clean_ArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812912E2C16DDCF0013F97B /* Swift_Clean_ArchitectureUITests.swift */; };
 		D81291362C16DDFC0013F97B /* MakeTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81291352C16DDFC0013F97B /* MakeTransaction.swift */; };
 		D812913A2C16DE220013F97B /* TransactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81291392C16DE220013F97B /* TransactionRepository.swift */; };
 		D812913C2C16DE820013F97B /* AccountBalanceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812913B2C16DE820013F97B /* AccountBalanceRepository.swift */; };
@@ -44,8 +43,7 @@
 		D81291162C16DD280013F97B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D81291192C16DD280013F97B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D81291262C16DDB00013F97B /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
-		D812912C2C16DDCF0013F97B /* Swift-Clean-ArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-Clean-ArchitectureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D812912E2C16DDCF0013F97B /* Swift_Clean_ArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Clean_ArchitectureUITests.swift; sourceTree = "<group>"; };
+		D812912C2C16DDCF0013F97B /* Swift-Clean-ArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-Clean-ArchitectureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81291352C16DDFC0013F97B /* MakeTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTransaction.swift; sourceTree = "<group>"; };
 		D81291392C16DE220013F97B /* TransactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRepository.swift; sourceTree = "<group>"; };
 		D812913B2C16DE820013F97B /* AccountBalanceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceRepository.swift; sourceTree = "<group>"; };
@@ -82,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				D81291112C16DD270013F97B /* Swift-Clean-Architecture */,
-				D812912D2C16DDCF0013F97B /* Swift-Clean-ArchitectureUITests */,
+				D812912D2C16DDCF0013F97B /* Swift-Clean-ArchitectureTests */,
 				D81291102C16DD270013F97B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				D812910F2C16DD270013F97B /* Swift-Clean-Architecture.app */,
-				D812912C2C16DDCF0013F97B /* Swift-Clean-ArchitectureUITests.xctest */,
+				D812912C2C16DDCF0013F97B /* Swift-Clean-ArchitectureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,14 +153,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		D812912D2C16DDCF0013F97B /* Swift-Clean-ArchitectureUITests */ = {
+		D812912D2C16DDCF0013F97B /* Swift-Clean-ArchitectureTests */ = {
 			isa = PBXGroup;
 			children = (
 				D81291482C16E02D0013F97B /* Data  */,
 				D81291442C16DFD00013F97B /* Domain */,
-				D812912E2C16DDCF0013F97B /* Swift_Clean_ArchitectureUITests.swift */,
 			);
-			path = "Swift-Clean-ArchitectureUITests";
+			path = "Swift-Clean-ArchitectureTests";
 			sourceTree = "<group>";
 		};
 		D81291372C16DE130013F97B /* Repository */ = {
@@ -236,9 +233,9 @@
 			productReference = D812910F2C16DD270013F97B /* Swift-Clean-Architecture.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D812912B2C16DDCF0013F97B /* Swift-Clean-ArchitectureUITests */ = {
+		D812912B2C16DDCF0013F97B /* Swift-Clean-ArchitectureTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D81291322C16DDCF0013F97B /* Build configuration list for PBXNativeTarget "Swift-Clean-ArchitectureUITests" */;
+			buildConfigurationList = D81291322C16DDCF0013F97B /* Build configuration list for PBXNativeTarget "Swift-Clean-ArchitectureTests" */;
 			buildPhases = (
 				D81291282C16DDCF0013F97B /* Sources */,
 				D81291292C16DDCF0013F97B /* Frameworks */,
@@ -249,9 +246,9 @@
 			dependencies = (
 				D81291312C16DDCF0013F97B /* PBXTargetDependency */,
 			);
-			name = "Swift-Clean-ArchitectureUITests";
+			name = "Swift-Clean-ArchitectureTests";
 			productName = "Swift-Clean-ArchitectureUITests";
-			productReference = D812912C2C16DDCF0013F97B /* Swift-Clean-ArchitectureUITests.xctest */;
+			productReference = D812912C2C16DDCF0013F97B /* Swift-Clean-ArchitectureTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -287,7 +284,7 @@
 			projectRoot = "";
 			targets = (
 				D812910E2C16DD270013F97B /* Swift-Clean-Architecture */,
-				D812912B2C16DDCF0013F97B /* Swift-Clean-ArchitectureUITests */,
+				D812912B2C16DDCF0013F97B /* Swift-Clean-ArchitectureTests */,
 			);
 		};
 /* End PBXProject section */
@@ -338,7 +335,6 @@
 				D812914A2C16E0370013F97B /* MockTransactionRepository.swift in Sources */,
 				D81291472C16DFDA0013F97B /* MakeTransactionTests.swift in Sources */,
 				D812914C2C16E1410013F97B /* MockAccountBalanceRepository.swift in Sources */,
-				D812912F2C16DDCF0013F97B /* Swift_Clean_ArchitectureUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D81291322C16DDCF0013F97B /* Build configuration list for PBXNativeTarget "Swift-Clean-ArchitectureUITests" */ = {
+		D81291322C16DDCF0013F97B /* Build configuration list for PBXNativeTarget "Swift-Clean-ArchitectureTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D81291332C16DDCF0013F97B /* Debug */,
